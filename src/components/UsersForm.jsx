@@ -44,7 +44,7 @@ const UsersForm = ({getUsers, userSelected, deselectUser}) => {
 
             <div className="complete-name">
 
-                <label htmlFor="name"><i className="fi fi-sr-user"></i></label>
+                <label htmlFor="name"><i className="icon fi fi-sr-user"></i></label>
         
                 <div className="full-name">
 
