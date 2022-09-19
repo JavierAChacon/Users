@@ -1,0 +1,80 @@
+.App{
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.list{
+  width: 70vw;
+  background-color: aqua;
+  text-align: center;
+}
+
+.list h2{
+  text-align: center;
+}
+
+.form{
+  width: 30vw;
+  padding: 1rem;
+}
+
+.form form{
+  height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#email{
+  width: calc(100% - 1.5rem);
+  margin-left: 0.5rem;
+}
+
+#password{
+  width: calc(100% - 1.5rem);
+  margin-left: 0.5rem;
+}
+
+#birthday{
+  width: calc(100% - 1.5rem);
+  margin-left: 0.5rem;
+}
+.form h2{
+  text-align: center;
+  margin: 1rem;
+}
+
+.complete-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-name{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name{
+  margin-left: 0.5rem;
+  width: 48%;
+}
+
+#last-name{
+  width: 48%;
+}
+
+.formButtons{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0.5rem auto;
+}
+
+.formButtons > button{
+  border-radius: 1rem;
+  border: none;
+  padding: 0.4rem;
+}
+
+
