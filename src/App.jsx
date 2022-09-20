@@ -25,10 +25,12 @@ function App() {
 
   const selectUser = (user) => {
     setUserSelected(user)
+    
   }
 
   const deselectUser = () =>{
     setUserSelected(null)
+     
   }
 
 

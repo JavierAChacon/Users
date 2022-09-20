@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 
+
 const UsersForm = ({getUsers, userSelected, deselectUser}) => {
     
     const {register, handleSubmit, reset} = useForm()
@@ -10,7 +11,9 @@ const UsersForm = ({getUsers, userSelected, deselectUser}) => {
         if(userSelected){
            axios
            .put(`https://users-crud1.herokuapp.com/users/${data.id}/`, data)
-           .catch(error => console.log(error.response)) 
+           .then(() => getUsers())
+           .catch(error => console.log(error.response))
+
         } else{
             axios
             .post('https://users-crud1.herokuapp.com/users/', data)
